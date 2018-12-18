@@ -3,7 +3,6 @@ public class trans {
         int check = -1;
         java.util.Scanner select = new  java.util.Scanner(System.in);
 
-
         double fah;
         double cel;
 
@@ -12,8 +11,6 @@ public class trans {
         System.out.println(" 2. Celsius to Fahrenheit");
         System.out.println(" 0. Exit ");
         check = select.nextInt();
-
-
 
             switch (check){
                 case 1:
@@ -32,9 +29,6 @@ public class trans {
                     break;
                 case 0:
                     System.exit(0);
-
-
-
             }
         }
     }
