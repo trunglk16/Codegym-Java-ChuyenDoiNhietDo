@@ -3,9 +3,8 @@ public class trans {
         int check = -1;
         java.util.Scanner select = new  java.util.Scanner(System.in);
 
-
-        double fah;
-        double cel;
+        double fahrenheit;
+        double celsius;
 
         while (check != 0){
         System.out.println(" 1. Fahrenheit to Celsius");
@@ -13,28 +12,23 @@ public class trans {
         System.out.println(" 0. Exit ");
         check = select.nextInt();
 
-
-
             switch (check){
                 case 1:
                     System.out.println("Moi ban nhap nhiet do theo Cel");
                     java.util.Scanner input = new java.util.Scanner(System.in);
-                    fah = input.nextDouble();
-                    cel =(5.0 / 9) * (fah - 32);
-                    System.out.println("Result: " + cel );
+                    fahrenheit = input.nextDouble();
+                    celsius =(5.0 / 9) * (fahrenheit - 32);
+                    System.out.println("Result: " + celsius );
                     break;
                 case 2:
                     System.out.println("Moi ban nhap nhiet do theo Fah");
                     java.util.Scanner input2 = new java.util.Scanner(System.in);
-                    cel = input2.nextDouble();
-                    fah =  (9.0 / 5) * cel + 32;
-                    System.out.println("Result: " + fah );
+                    celsius = input2.nextDouble();
+                    fahrenheit =  (9.0 / 5) * celsius + 32;
+                    System.out.println("Result: " + fahrenheit );
                     break;
                 case 0:
                     System.exit(0);
-
-
-
             }
         }
     }
